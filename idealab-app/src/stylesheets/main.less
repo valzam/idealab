@@ -1,0 +1,58 @@
+// Import external libs
+@import '../../bower_modules/bootstrap/less/bootstrap';
+@import (inline) '../../bower_modules/bootstrap-toggle/css/bootstrap-toggle.css';
+@import '../../bower_modules/toastr/toastr';
+
+// Import partial files
+@import './_variables.less';
+
+@import './_sidebar.less';
+@import './_navbar.less';
+@import './_auth.less';
+@import './_settings.less';
+@import './_helpers.less';
+
+body {
+  padding-top: @navbar-height;
+  overflow-y: hidden;
+}
+
+.content {
+    padding-top: @navbar-height * 0.4;
+}
+
+button:focus {outline:none !important;}
+
+.bottom-spacer {
+  margin-bottom:15px;
+}
+
+.panel.success .panel-heading {
+  color:@brand-success;
+  background-color: @white;
+}
+
+#toast-container > div {
+  opacity: 1;
+}
+
+ul.pager {
+  li.create a {
+    font-size:1.3em;
+    color:@brand-success;
+  }
+  li.cancel a, li.delete a {
+    margin-left:10px;
+    color:@brand-danger;
+  }
+
+  li.update a{
+    margin-left:10px;
+  }
+}
+
+ul.nav-tabs {
+  a {
+    outline:none !important;
+  }
+}
