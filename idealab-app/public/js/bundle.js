@@ -17632,7 +17632,7 @@ var ViewProblem = (function (_React$Component2) {
           _react2['default'].createElement(
             'div',
             { className: 'well' },
-            this.state.activeProblem.text
+            this.state.activeProblem.text ? this.state.activeProblem.text.replace(/\n/g, "<br />") : ""
           )
         )
       );

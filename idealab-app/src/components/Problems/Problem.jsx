@@ -71,7 +71,7 @@ class ViewProblem extends React.Component {
         </div>
         <div className="col-sm-12">
           <div className="well">
-            {this.state.activeProblem.text}
+            { this.state.activeProblem.text ?  this.state.activeProblem.text.replace(/\n/g, "<br />") : ""}
           </div>
         </div>
       </div>
